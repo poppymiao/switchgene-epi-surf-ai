@@ -26,10 +26,10 @@ export const Navbar = () => {
               Applications
             </a>
             <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50">
-              Contact
+              Contact Sales
             </Button>
             <Button className="bg-blue-600 hover:bg-blue-700">
-              Get Started
+              Schedule a Demo
             </Button>
           </div>
 
@@ -56,10 +56,10 @@ export const Navbar = () => {
             </a>
             <div className="flex space-x-4 pt-4">
               <Button variant="outline" className="border-blue-600 text-blue-600">
-                Contact
+                Contact Sales
               </Button>
               <Button className="bg-blue-600 hover:bg-blue-700">
-                Get Started
+                Schedule a Demo
               </Button>
             </div>
           </div>

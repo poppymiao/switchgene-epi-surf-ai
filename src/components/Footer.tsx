@@ -61,18 +61,18 @@ export const Footer = () => {
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="h-4 w-4" />
-                  <span>+1 (555) 123-4567</span>
+                  <span>+44 7653219988</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <MapPin className="h-4 w-4" />
-                  <span>San Francisco, CA</span>
+                  <span>Cambridge, UK</span>
                 </div>
               </div>
             </div>
             
             <div className="text-right">
               <div className="text-slate-400 text-sm">
-                <p>&copy; 2024 SwitchGene. All rights reserved.</p>
+                <p>&copy; 2025 SwitchGene. All rights reserved.</p>
                 <div className="mt-2 space-x-4">
                   <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
                   <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
