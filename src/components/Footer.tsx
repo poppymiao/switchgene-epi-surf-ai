@@ -1,5 +1,4 @@
-
-import { Dna, Mail, Phone, MapPin, Github, Twitter, Linkedin } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Twitter, Linkedin } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -9,7 +8,7 @@ export const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <Dna className="h-8 w-8 text-blue-400" />
+              <img src="/lovable-uploads/b8617696-28bc-4be7-ad4a-9eaf52a84251.png" alt="SwitchGene Logo" className="h-8 w-8" />
               <span className="text-2xl font-bold">SwitchGene</span>
             </div>
             <p className="text-slate-300 mb-6 max-w-md">

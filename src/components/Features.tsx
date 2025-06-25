@@ -73,7 +73,7 @@ export const Features = () => {
             <Card key={index} className="border-slate-200 hover:shadow-lg transition-shadow duration-300 bg-white/80 backdrop-blur-sm">
               <CardHeader className="pb-3">
                 <div className="mb-4">
-                  <feature.icon className="h-8 w-8 text-blue-600" />
+                  <feature.icon className="h-8 w-8 text-[#004853]" />
                 </div>
                 <CardTitle className="text-lg text-slate-800">{feature.title}</CardTitle>
               </CardHeader>

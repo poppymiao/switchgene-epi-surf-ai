@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -19,10 +18,10 @@ export const Demo = () => {
   };
 
   return (
-    <section id="demo" className="py-20 bg-gradient-to-r from-slate-50 to-blue-50">
+    <section id="demo" className="py-20 bg-gradient-to-r from-slate-50 to-[#004853]/5">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <Badge className="mb-4 bg-blue-100 text-blue-800 hover:bg-blue-200">
+          <Badge className="mb-4 bg-[#004853]/10 text-[#004853] hover:bg-[#004853]/20">
             Interactive Demo
           </Badge>
           <h2 className="text-4xl font-bold text-slate-800 mb-4">
@@ -70,7 +69,7 @@ export const Demo = () => {
                     <Button 
                       onClick={handleAnalyze}
                       disabled={isAnalyzing}
-                      className="bg-blue-600 hover:bg-blue-700"
+                      className="bg-[#004853] hover:bg-[#004853]/90"
                     >
                       {isAnalyzing ? (
                         <>Analyzing...</>
@@ -88,13 +87,13 @@ export const Demo = () => {
                     </Button>
                   </div>
 
-                  <div className="p-4 bg-blue-50 rounded-lg">
-                    <h4 className="font-medium text-blue-900 mb-2">Sample Sequences</h4>
+                  <div className="p-4 bg-[#004853]/5 rounded-lg">
+                    <h4 className="font-medium text-[#004853] mb-2">Sample Sequences</h4>
                     <div className="space-y-2 text-sm">
-                      <div className="p-2 bg-white rounded border cursor-pointer hover:bg-blue-50 transition-colors">
+                      <div className="p-2 bg-white rounded border cursor-pointer hover:bg-[#004853]/5 transition-colors">
                         <strong>Promoter Region:</strong> TATAAGGATCCCGGGAATTC...
                       </div>
-                      <div className="p-2 bg-white rounded border cursor-pointer hover:bg-blue-50 transition-colors">
+                      <div className="p-2 bg-white rounded border cursor-pointer hover:bg-[#004853]/5 transition-colors">
                         <strong>Enhancer Sequence:</strong> CACGTGACGTCACGTGACGT...
                       </div>
                     </div>
@@ -161,7 +160,7 @@ export const Demo = () => {
                       <CardTitle className="text-lg">Accessibility Score</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <div className="text-3xl font-bold text-blue-600">0.847</div>
+                      <div className="text-3xl font-bold text-[#004853]">0.847</div>
                       <p className="text-sm text-slate-600 mt-1">High accessibility predicted</p>
                     </CardContent>
                   </Card>
