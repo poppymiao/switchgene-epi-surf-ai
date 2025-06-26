@@ -28,6 +28,7 @@ export const GenomicVisualization = () => {
     const height = 200;
     const numBins = 100;
     const binWidth = width / numBins;
+    const baselineY = 250; // Baseline at the bottom of the chart area
 
     for (let i = 0; i < numBins; i++) {
       // Generate sample accessibility data with some patterns
@@ -40,16 +41,19 @@ export const GenomicVisualization = () => {
       const lightness = 50 + accessibility * 30;
       
       ctx.fillStyle = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
-      ctx.fillRect(i * binWidth, 50, binWidth, height * accessibility);
+      
+      // Draw bars extending upward from baseline
+      const barHeight = height * accessibility;
+      ctx.fillRect(i * binWidth, baselineY - barHeight, binWidth, barHeight);
     }
 
-    // Draw reference line
+    // Draw reference line (baseline)
     ctx.strokeStyle = "#64748b";
     ctx.lineWidth = 1;
     ctx.setLineDash([5, 5]);
     ctx.beginPath();
-    ctx.moveTo(0, 150);
-    ctx.lineTo(width, 150);
+    ctx.moveTo(0, baselineY);
+    ctx.lineTo(width, baselineY);
     ctx.stroke();
     ctx.setLineDash([]);
 
@@ -61,7 +65,7 @@ export const GenomicVisualization = () => {
     ctx.fillText("Position (bp)", width / 2 - 40, 290);
     
     ctx.save();
-    ctx.translate(15, 150);
+    ctx.translate(15, baselineY - 50);
     ctx.rotate(-Math.PI / 2);
     ctx.fillText("Accessibility Score", 0, 0);
     ctx.restore();
