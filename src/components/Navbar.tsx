@@ -10,8 +10,8 @@ export const Navbar = () => {
     <nav className="bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <a href="/" className="flex items-center space-x-2">
-            <img src="/logo.png" alt="SwitchGene Logo" className="h-8 w-8" />
+          <a href={import.meta.env.BASE_URL} className="flex items-center space-x-2">
+            <img src={`${import.meta.env.BASE_URL}logo.png`} alt="SwitchGene Logo" className="h-8 w-8" />
             <span className="text-xl font-bold text-slate-800">SwitchGene</span>
           </a>
           
@@ -26,10 +26,10 @@ export const Navbar = () => {
               Applications
             </a>
             <Button asChild variant="outline" className="border-[#004853] text-[#004853] hover:bg-[#004853]/10">
-              <a href="mailto:contact@switchgene.ai?subject=Sales%20enquiry">Contact Sales</a>
+              <a href="#contact">Contact Sales</a>
             </Button>
             <Button asChild className="bg-[#004853] hover:bg-[#004853]/90">
-              <a href="mailto:contact@switchgene.ai?subject=Demo%20request">Schedule a Demo</a>
+              <a href="#demo">Schedule a Demo</a>
             </Button>
           </div>
 
@@ -57,10 +57,10 @@ export const Navbar = () => {
             </a>
             <div className="flex space-x-4 pt-4">
               <Button asChild variant="outline" className="border-[#004853] text-[#004853]">
-                <a href="mailto:contact@switchgene.ai?subject=Sales%20enquiry">Contact Sales</a>
+                <a href="#contact">Contact Sales</a>
               </Button>
               <Button asChild className="bg-[#004853] hover:bg-[#004853]/90">
-                <a href="mailto:contact@switchgene.ai?subject=Demo%20request">Schedule a Demo</a>
+                <a href="#demo">Schedule a Demo</a>
               </Button>
             </div>
           </div>

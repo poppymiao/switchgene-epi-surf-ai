@@ -5,6 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // GitHub Pages serves the site from /<repo>/; Lovable and local dev use /
+  base: process.env.GITHUB_PAGES === "true" ? "/switchgene-epi-surf-ai/" : "/",
   server: {
     host: "::",
     port: 8080,

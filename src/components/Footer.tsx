@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Github, Twitter, Linkedin } from "lucide-react";
+import { Phone, MapPin, Github, Twitter, Linkedin } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -8,7 +8,7 @@ export const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <img src="/logo.png" alt="SwitchGene Logo" className="h-8 w-8" />
+              <img src={`${import.meta.env.BASE_URL}logo.png`} alt="SwitchGene Logo" className="h-8 w-8" />
               <span className="text-2xl font-bold">SwitchGene</span>
             </div>
             <p className="text-slate-300 mb-6 max-w-md">
@@ -51,13 +51,9 @@ export const Footer = () => {
         {/* Contact & Legal */}
         <div className="border-t border-slate-700 mt-12 pt-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
+            <div id="contact">
               <h4 className="font-semibold text-lg mb-4">Contact Us</h4>
               <div className="space-y-3 text-slate-300">
-                <div className="flex items-center gap-3">
-                  <Mail className="h-4 w-4" />
-                  <a href="mailto:contact@switchgene.ai" className="hover:text-white transition-colors">contact@switchgene.ai</a>
-                </div>
                 <div className="flex items-center gap-3">
                   <Phone className="h-4 w-4" />
                   <a href="tel:+447653219988" className="hover:text-white transition-colors">+44 7653 219988</a>
