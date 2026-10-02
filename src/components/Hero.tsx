@@ -25,9 +25,11 @@ export const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" className="bg-[#004853] hover:bg-[#004853]/90 text-lg px-8">
-              Try Demo
-              <ArrowRight className="ml-2 h-5 w-5" />
+            <Button asChild size="lg" className="bg-[#004853] hover:bg-[#004853]/90 text-lg px-8">
+              <a href="#demo">
+                Try Demo
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
             </Button>
             <Button size="lg" variant="outline" className="border-slate-300 text-lg px-8">
               <Play className="mr-2 h-5 w-5" />

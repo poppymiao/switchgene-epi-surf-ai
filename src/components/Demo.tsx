@@ -126,7 +126,7 @@ export const Demo = () => {
                     </div>
                   </div>
                   
-                  <Button className="bg-blue-600 hover:bg-blue-700">
+                  <Button className="bg-[#004853] hover:bg-[#004853]/90">
                     <Play className="mr-2 h-4 w-4" />
                     Query Region
                   </Button>

@@ -8,7 +8,7 @@ export const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <img src="/lovable-uploads/b8617696-28bc-4be7-ad4a-9eaf52a84251.png" alt="SwitchGene Logo" className="h-8 w-8" />
+              <img src="/logo.png" alt="SwitchGene Logo" className="h-8 w-8" />
               <span className="text-2xl font-bold">SwitchGene</span>
             </div>
             <p className="text-slate-300 mb-6 max-w-md">
@@ -27,8 +27,8 @@ export const Footer = () => {
           <div>
             <h4 className="font-semibold text-lg mb-4">Product</h4>
             <ul className="space-y-2 text-slate-300">
-              <li><a href="#" className="hover:text-white transition-colors">Features</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Demo</a></li>
+              <li><a href="#features" className="hover:text-white transition-colors">Features</a></li>
+              <li><a href="#demo" className="hover:text-white transition-colors">Demo</a></li>
               <li><a href="#" className="hover:text-white transition-colors">API Documentation</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Pricing</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Enterprise</a></li>
@@ -56,11 +56,11 @@ export const Footer = () => {
               <div className="space-y-3 text-slate-300">
                 <div className="flex items-center gap-3">
                   <Mail className="h-4 w-4" />
-                  <span>contact@switchgene.ai</span>
+                  <a href="mailto:contact@switchgene.ai" className="hover:text-white transition-colors">contact@switchgene.ai</a>
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="h-4 w-4" />
-                  <span>+44 7653219988</span>
+                  <a href="tel:+447653219988" className="hover:text-white transition-colors">+44 7653 219988</a>
                 </div>
                 <div className="flex items-center gap-3">
                   <MapPin className="h-4 w-4" />
@@ -71,7 +71,7 @@ export const Footer = () => {
             
             <div className="text-right">
               <div className="text-slate-400 text-sm">
-                <p>&copy; 2025 SwitchGene. All rights reserved.</p>
+                <p>&copy; {new Date().getFullYear()} SwitchGene. All rights reserved.</p>
                 <div className="mt-2 space-x-4">
                   <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
                   <a href="#" className="hover:text-white transition-colors">Terms of Service</a>

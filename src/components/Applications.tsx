@@ -135,16 +135,16 @@ export const Applications = () => {
           <h3 className="text-3xl font-bold mb-4">
             Ready to Accelerate Your Research?
           </h3>
-          <p className="text-xl text-[#004853]/20 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
             Join leading research institutions and biotech companies using SwitchGene 
             to unlock new therapeutic possibilities.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-50">
-              Schedule a Demo
+            <Button asChild size="lg" variant="secondary" className="bg-white text-[#004853] hover:bg-gray-50">
+              <a href="mailto:contact@switchgene.ai?subject=Demo%20request">Schedule a Demo</a>
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-              Contact Sales
+            <Button asChild size="lg" variant="outline" className="border-white bg-transparent text-white hover:bg-white/10 hover:text-white">
+              <a href="mailto:contact@switchgene.ai?subject=Sales%20enquiry">Contact Sales</a>
             </Button>
           </div>
         </div>
