@@ -143,9 +143,6 @@ export const Applications = () => {
             <Button asChild size="lg" variant="secondary" className="bg-white text-[#004853] hover:bg-gray-50">
               <a href="#demo">Schedule a Demo</a>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white bg-transparent text-white hover:bg-white/10 hover:text-white">
-              <a href="#contact">Contact Sales</a>
-            </Button>
           </div>
         </div>
       </div>

@@ -1,12 +1,12 @@
+<h3 align="center">
+  🌐 <a href="https://poppymiao.github.io/switchgene-epi-surf-ai/">Visit the website: poppymiao.github.io/switchgene-epi-surf-ai</a>
+</h3>
+
 <p align="center">
   <img src="public/logo.png" alt="SwitchGene logo" width="96" />
 </p>
 
 <h1 align="center">SwitchGene</h1>
-
-<p align="center">
-  🌐 <a href="https://poppymiao.github.io/switchgene-epi-surf-ai/"><strong>poppymiao.github.io/switchgene-epi-surf-ai</strong></a>
-</p>
 
 <p align="center">
   <strong>AI-powered chromatin accessibility prediction for genomic research and drug discovery.</strong>
@@ -35,16 +35,7 @@ The site includes:
 - **Applications**: use cases for research labs, pharmaceutical companies (drug discovery and target validation) and gene therapy (vector delivery optimisation).
 - **Contact**: routes for sales and demo requests.
 
-> **Note:** the demo uses simulated predictions for illustration. It is not connected to the production model.
-
-## Screenshots
-
-<p align="center">
-  <img src="docs/screenshots/hero.png" alt="SwitchGene landing page" width="85%" />
-</p>
-<p align="center">
-  <img src="docs/screenshots/features-demo.png" alt="Features and interactive demo" width="85%" />
-</p>
+> **Note:** this is a concept demo. Predictions are simulated and the usage figures shown on the site are illustrative; the site is not connected to a production model.
 
 ## Tech stack
 
@@ -94,7 +85,6 @@ The development server starts at <http://localhost:8080> with hot module reloadi
 
 ```
 .
-├── docs/screenshots/       # Images used in this README
 ├── public/                 # Static assets (logo, robots.txt)
 ├── src/
 │   ├── components/
@@ -118,7 +108,7 @@ The development server starts at <http://localhost:8080> with hot module reloadi
 
 ## Deployment
 
-Every push to `main` builds the site and deploys it to [GitHub Pages](https://poppymiao.github.io/switchgene-epi-surf-ai/) through [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
+The site is hosted on [GitHub Pages](https://poppymiao.github.io/switchgene-epi-surf-ai/) and updates automatically on every push to `main`.
 
 `npm run build` writes a static site to `dist/`, so it can also be hosted on any other static hosting provider, such as Vercel, Netlify or Cloudflare Pages.
 

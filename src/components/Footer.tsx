@@ -1,4 +1,4 @@
-import { Phone, MapPin, Github, Twitter, Linkedin } from "lucide-react";
+import { MapPin, Github, Twitter, Linkedin } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -51,13 +51,9 @@ export const Footer = () => {
         {/* Contact & Legal */}
         <div className="border-t border-slate-700 mt-12 pt-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div id="contact">
-              <h4 className="font-semibold text-lg mb-4">Contact Us</h4>
+            <div>
+              <h4 className="font-semibold text-lg mb-4">Location</h4>
               <div className="space-y-3 text-slate-300">
-                <div className="flex items-center gap-3">
-                  <Phone className="h-4 w-4" />
-                  <a href="tel:+447653219988" className="hover:text-white transition-colors">+44 7653 219988</a>
-                </div>
                 <div className="flex items-center gap-3">
                   <MapPin className="h-4 w-4" />
                   <span>Cambridge, UK</span>

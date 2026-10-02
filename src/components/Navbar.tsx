@@ -25,9 +25,6 @@ export const Navbar = () => {
             <a href="#applications" className="text-slate-600 hover:text-[#004853] transition-colors">
               Applications
             </a>
-            <Button asChild variant="outline" className="border-[#004853] text-[#004853] hover:bg-[#004853]/10">
-              <a href="#contact">Contact Sales</a>
-            </Button>
             <Button asChild className="bg-[#004853] hover:bg-[#004853]/90">
               <a href="#demo">Schedule a Demo</a>
             </Button>
@@ -56,9 +53,6 @@ export const Navbar = () => {
               Applications
             </a>
             <div className="flex space-x-4 pt-4">
-              <Button asChild variant="outline" className="border-[#004853] text-[#004853]">
-                <a href="#contact">Contact Sales</a>
-              </Button>
               <Button asChild className="bg-[#004853] hover:bg-[#004853]/90">
                 <a href="#demo">Schedule a Demo</a>
               </Button>
